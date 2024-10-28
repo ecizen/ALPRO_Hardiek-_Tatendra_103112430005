@@ -1,0 +1,14 @@
+program Faktor
+kamus
+    number, i : integer
+algoritma
+    input(number)
+    output("Faktor dari ", number, " adalah:")
+    for i = 1 to number do
+        if number MOD i = 0 then
+            output(i, " true")   // Jika i adalah faktor
+        else
+            output(i, " false")  // Jika i bukan faktor
+        endif
+    endfor
+endprogram

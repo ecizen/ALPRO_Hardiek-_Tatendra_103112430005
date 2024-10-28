@@ -1,0 +1,24 @@
+program menentukan cumlaude
+
+kamus
+ type investasiFormula <
+ 	totalInvestasiAwal : float64
+	totalPenjualan     : float64
+	keuntunganKotor    : float64
+	biayaTransaksi     : float64
+	pajakKeuntungan    : float64
+	keuntunganBersih   : float64 
+    >
+    hargaBeli, hargaJual, jumlaSaham : float64
+
+algoritma
+    rumus : investasiFormula
+    input (hargaBeli, hargaJual, jumlaSaham)
+    rumus.totalInvestasiAwal = hargaBeli * jumlahSaham 
+	rumus.totalPenjualan = hargaJual * jumlahSaham 
+	rumus.keuntunganKotor = rumus.totalPenjualan - rumus.totalInvestasiAwal
+	rumus.biayaTransaksi = rumus.totalPenjualan * persenBiayaTransaksi 
+	rumus.pajakKeuntungan = rumus.keuntunganKotor * persenPajakKeuntungan 
+    output(hargaBeli, hargaJual, jumlahSaham)
+    output(, rumus.totalInvestasiAwal, rumus.totalPenjualan, rumus.keuntunganKotor, rumus.biayaTransaksi, rumus.pajakKeuntunganKotor, rumus.keuntunganBersih)
+endprogram

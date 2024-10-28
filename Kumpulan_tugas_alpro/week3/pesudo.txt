@@ -1,0 +1,13 @@
+program menentukan cumlaude
+
+kamus
+
+totalSemester, nilaiEprt : bilangan bulat
+lulus : boolean
+
+algoritma
+input(totalSemester, nilaiEprt)
+
+lulus = <= 8 semester & nilaiEprt => 500 
+output(lulus)
+endprogram
